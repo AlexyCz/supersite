@@ -27,50 +27,76 @@ type SocialLink = {
   link: string
 }
 
-export const PROJECTS: Project[] = [
+export const LIKES: Project[] = [
   {
-    name: 'Motion Primitives Pro',
-    description:
-      'Advanced components and templates to craft beautiful websites.',
-    link: 'https://pro.motion-primitives.com/',
+    name: 'reading...',
+    description: 'Politics and the English Language by George Orwell, c. 1946',
+    link: 'https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/',
     video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
+      'https://upload.wikimedia.org/wikipedia/en/6/65/PoliticsandtheEnglishLanguage.jpg',
     id: 'project1',
   },
   {
-    name: 'Motion Primitives',
-    description: 'UI kit to make beautiful, animated interfaces.',
-    link: 'https://motion-primitives.com/',
+    name: 'admiring...',
+    description: 'Quintus Jan Telting, c. 1988',
+    link: 'https://teltingcollection.com/wp-content/uploads/2020/01/1797__anno-1988_110-x-140_.jpg',
     video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
+      'https://teltingcollection.com/wp-content/uploads/2020/01/1797__anno-1988_110-x-140_.jpg',
+    id: 'project2',
+  },
+]
+
+export const PROJECTS: Project[] = [
+  {
+    name: 'SentimentVroom',
+    description:
+      "Analyzing your favorite driver's interaction with their race engineer throughout the race with radio transcription and sentiment analysis.",
+    link: 'https://sentimentvroom.vercel.app',
+    video: 'video_link',
+    id: 'project1',
+  },
+  {
+    name: 'Exploratory Data Engineering',
+    description:
+      'Exploring a variety of data engineering self-directed practicums from @danielbeach on Github.',
+    link: 'https://motion-primitives.com/',
+    video: 'video\.uri',
     id: 'project2',
   },
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
-    start: '2024',
-    end: 'Present',
-    link: 'https://ibelick.com',
+    company: 'Built Technologies',
+    title: 'Data Engineer',
+    start: '2021',
+    end: '2023',
+    link: 'https://getbuilt.com/about-us/',
     id: 'work1',
   },
   {
-    company: 'Freelance',
-    title: 'Design Engineer',
-    start: '2022',
-    end: '2024',
-    link: 'https://ibelick.com',
+    company: 'Brigade Media',
+    title: 'Data Engineer, Intern',
+    start: '2018',
+    end: '2018',
+    link: 'https://www.linkedin.com/company/brigade-/about/',
     id: 'work2',
   },
   {
-    company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
-    end: 'Present',
-    link: 'https://ibelick.com',
+    company: 'Clover Health',
+    title: 'Data Engineer, Intern',
+    start: '2018',
+    end: '2018',
+    link: 'https://www.cloverhealth.com/about-us/about-clover',
     id: 'work3',
+  },
+  {
+    company: 'Foursquare',
+    title: 'Software Engineer, Android, Intern',
+    start: '2017',
+    end: '2017',
+    link: 'https://foursquare.com/about-us/',
+    id: 'work4',
   },
 ]
 
@@ -100,19 +126,15 @@ export const BLOG_POSTS: BlogPost[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
-    link: 'https://github.com/ibelick',
-  },
-  {
-    label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
+    link: 'https://github.com/AlexyCz',
   },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
+    link: 'https://www.linkedin.com/in/alexycrz',
   },
   {
-    label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
+    label: 'Substack',
+    link: 'https://substack.com/@cruzcntrl',
   },
 ]
 

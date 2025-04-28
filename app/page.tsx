@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import { motion } from 'motion/react'
 import { XIcon } from 'lucide-react'
 import { Spotlight } from '@/components/ui/spotlight'
@@ -13,6 +14,7 @@ import {
 import Link from 'next/link'
 import { AnimatedBackground } from '@/components/ui/animated-background'
 import {
+  LIKES,
   PROJECTS,
   WORK_EXPERIENCE,
   BLOG_POSTS,
@@ -136,9 +138,22 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <div className="flex-1">
-          <p className="text-zinc-600 dark:text-zinc-400">
-            Focused on creating intuitive and performant web experiences.
-            Bridging the gap between design and development.
+          <p className="mb-4 text-zinc-600 dark:text-zinc-400">
+            I'm an engineer with a recent keen interest in Public Interest
+            Technology.
+          </p>
+          <p className="mb-4 text-zinc-600 dark:text-zinc-400">
+            I love readable code for fun and good.
+          </p>
+          <p className="mb-4 text-zinc-600 dark:text-zinc-400">
+            Have been a data engineer with experience across different
+            industries, e.g. real estate fintech, health tech, and civic tech.
+            Although most of my current expertise is in data engineering with
+            varied applications, my curiosity leads me to be a generalist who
+            enjoys intersecting code with something that might not have it.
+          </p>
+          <p className="mb-4 text-zinc-600 dark:text-zinc-400">
+            Living by RTDC: Reading The Documentation Carefully.
           </p>
         </div>
       </motion.section>
@@ -147,7 +162,43 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Selected Projects</h3>
+        <h3 className="mb-5 text-lg font-medium">
+          Currently reading and admiring... 🖼️
+        </h3>
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          {LIKES.map((project) => (
+            <div key={project.name} className="space-y-2">
+              <div className="relative bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
+                <Image
+                  src={project.video}
+                  width={300}
+                  height={300}
+                  alt={project.description}
+                />
+              </div>
+              <div className="px-1">
+                <a
+                  className="font-base group relative inline-block font-[450] text-zinc-900 dark:text-zinc-50"
+                  href={project.link}
+                  target="_blank"
+                >
+                  {project.name}
+                  <span className="absolute bottom-0.5 left-0 block h-[1px] w-full max-w-0 bg-zinc-900 transition-all duration-200 group-hover:max-w-full"></span>
+                </a>
+                <p className="text-base text-zinc-600 dark:text-zinc-400">
+                  {project.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </motion.section>
+
+      <motion.section
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+      >
+        <h3 className="mb-5 text-lg font-medium">Alexy's Lab Builds 🧑🏻‍🔬</h3>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
