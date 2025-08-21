@@ -51,21 +51,29 @@ export const PROJECTS: Project[] = [
     name: 'SentimentVroom',
     description:
       "Analyzing your favorite driver's interaction with their race engineer throughout the race with radio transcription and sentiment analysis.",
-    link: 'https://sentimentvroom.vercel.app',
+    link: 'https://github.com/AlexyCz/F1RadioSentiment',
     video: 'video_link',
     id: 'project1',
   },
   {
     name: 'Exploratory Data Engineering',
     description:
-      'Exploring a variety of data engineering self-directed practicums from @danielbeach on Github.',
-    link: 'https://motion-primitives.com/',
-    video: 'video\.uri',
+      'Exploring a variety of data engineering self-directed practicums forked from @danielbeach on Github.',
+    link: 'https://github.com/AlexyCz/data-engineering-practice',
+    video: 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmh2bDM2ZHJvYmhrYnh4Ymd5cnE4eXF4NTMxODdndWVscXJuMjNjNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qzE4X805YG1APcYuhT/giphy.gifhttps://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmh2bDM2ZHJvYmhrYnh4Ymd5cnE4eXF4NTMxODdndWVscXJuMjNjNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qzE4X805YG1APcYuhT/giphy.gif',
     id: 'project2',
   },
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
+  {
+    company: 'Braid',
+    title: 'FullStack Core Developer',
+    start: '2025',
+    end: 'Present',
+    link: 'https://braider.io',
+    id: 'work0',
+  },
   {
     company: 'Built Technologies',
     title: 'Data Engineer',
