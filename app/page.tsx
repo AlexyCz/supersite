@@ -91,6 +91,46 @@ function ProjectVideo({ src }: ProjectVideoProps) {
   )
 }
 
+function ProjectGIF({ src }: ProjectVideoProps) {
+  return (
+    <MorphingDialog
+      transition={{
+        type: 'spring',
+        bounce: 0,
+        duration: 0.3,
+      }}
+    >
+      <MorphingDialogTrigger>
+        <img
+          src={src}
+          className="aspect-video w-full cursor-zoom-in rounded-xl"
+        />
+      </MorphingDialogTrigger>
+      <MorphingDialogContainer>
+        <MorphingDialogContent className="relative aspect-video rounded-2xl bg-zinc-50 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950 dark:ring-zinc-800/50">
+          <img
+            src={src}
+            className="aspect-video h-[50vh] w-full rounded-xl md:h-[70vh]"
+          />
+        </MorphingDialogContent>
+        <MorphingDialogClose
+          className="fixed top-6 right-6 h-fit w-fit rounded-full bg-white p-1"
+          variants={{
+            initial: { opacity: 0 },
+            animate: {
+              opacity: 1,
+              transition: { delay: 0.3, duration: 0.1 },
+            },
+            exit: { opacity: 0, transition: { duration: 0 } },
+          }}
+        >
+          <XIcon className="h-5 w-5 text-zinc-500" />
+        </MorphingDialogClose>
+      </MorphingDialogContainer>
+    </MorphingDialog>
+  )
+}
+
 function MagneticSocialLink({
   children,
   link,
@@ -139,18 +179,13 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="mb-4 text-zinc-600 dark:text-zinc-400">
-            I'm an engineer with a recent keen interest in Public Interest
-            Technology.
+            Started very breadboards and wires in college, but followed the path of code.
           </p>
           <p className="mb-4 text-zinc-600 dark:text-zinc-400">
-            I love readable code for fun and good.
-          </p>
-          <p className="mb-4 text-zinc-600 dark:text-zinc-400">
-            Have been a data engineer with experience across different
-            industries, e.g. real estate fintech, health tech, and civic tech.
+            I am fond of code that can be elegant but most importantly readable. Luckily I have had opportunities across different industries, e.g. real estate fintech, health tech, and civic tech, to practice.
             Although most of my current expertise is in data engineering with
-            varied applications, my curiosity leads me to be a generalist who
-            enjoys intersecting code with something that might not have it.
+            varied applications, my curiosity inevitably leads me to confront ambiguity.
+            That is when one learns best.
           </p>
           <p className="mb-4 text-zinc-600 dark:text-zinc-400">
             Living by RTDC: Reading The Documentation Carefully.
@@ -163,7 +198,7 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <h3 className="mb-5 text-lg font-medium">
-          Currently reading and admiring... 🖼️
+          Opposite of technical... 🖼️
         </h3>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {LIKES.map((project) => (
@@ -198,12 +233,12 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Alexy's Lab Builds 🧑🏻‍🔬</h3>
+        <h3 className="mb-5 text-lg font-medium">Lab Builds 🧑🏻‍🔬</h3>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
               <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
-                <ProjectVideo src={project.video} />
+                <ProjectGIF src={project.video} />
               </div>
               <div className="px-1">
                 <a
@@ -249,6 +284,9 @@ export default function Personal() {
                     </h4>
                     <p className="text-zinc-500 dark:text-zinc-400">
                       {job.company}
+                    </p>
+                    <p className="text-zinc-500 dark:text-zinc-400">
+                      {job.industry}
                     </p>
                   </div>
                   <p className="text-zinc-600 dark:text-zinc-400">
@@ -303,10 +341,11 @@ export default function Personal() {
       >
         <h3 className="mb-5 text-lg font-medium">Connect</h3>
         <p className="mb-5 text-zinc-600 dark:text-zinc-400">
-          Feel free to contact me at{' '}
+          Feel free to contact me via:
+          {/*Feel free to contact me at{' '}
           <a className="underline dark:text-zinc-300" href={`mailto:${EMAIL}`}>
             {EMAIL}
-          </a>
+          </a>*/}
         </p>
         <div className="flex items-center justify-start space-x-3">
           {SOCIAL_LINKS.map((link) => (
