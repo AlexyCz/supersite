@@ -28,12 +28,20 @@ type SocialLink = {
 }
 
 export const LIKES: Project[] = [
+  // {
+  //   name: 'reading...',
+  //   description: 'Politics and the English Language by George Orwell, c. 1946',
+  //   link: 'https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/',
+  //   video:
+  //     'https://upload.wikimedia.org/wikipedia/en/6/65/PoliticsandtheEnglishLanguage.jpg',
+  //   id: 'project1',
+  // },
   {
     name: 'reading...',
-    description: 'Politics and the English Language by George Orwell, c. 1946',
-    link: 'https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/',
+    description: 'The Oath and the Office by Corey Brettschneider, 2018',
+    link: 'https://wwnorton.com/books/The-Oath-and-the-Office/',
     video:
-      'https://upload.wikimedia.org/wikipedia/en/6/65/PoliticsandtheEnglishLanguage.jpg',
+      'https://www.coreybrettschneider.com/assets/book-images/the-oath-and-the-office-no-shad.png',
     id: 'project1',
   },
   {
@@ -79,7 +87,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'Built Technologies',
     title: 'Data Engineer',
-    industry: 'Construction Real Estate',
+    industry: 'Construction Real Estate - Finance',
     start: '2021',
     end: '2023',
     link: 'https://getbuilt.com/about-us/',
@@ -116,8 +124,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    title: 'Exploring writing something of substance to read.',
-    description: 'How can I write.',
+    title: 'How to write a leet code editorial.',
+    description: 'How can I write about code.',
     link: '/blog/english-major-mode',
     uid: 'blog-1',
   },
