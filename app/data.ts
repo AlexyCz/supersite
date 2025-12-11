@@ -27,92 +27,118 @@ type SocialLink = {
   link: string
 }
 
-export const PROJECTS: Project[] = [
+export const LIKES: Project[] = [
+  // {
+  //   name: 'reading...',
+  //   description: 'Politics and the English Language by George Orwell, c. 1946',
+  //   link: 'https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/',
+  //   video:
+  //     'https://upload.wikimedia.org/wikipedia/en/6/65/PoliticsandtheEnglishLanguage.jpg',
+  //   id: 'project1',
+  // },
   {
-    name: 'Motion Primitives Pro',
-    description:
-      'Advanced components and templates to craft beautiful websites.',
-    link: 'https://pro.motion-primitives.com/',
+    name: 'reading...',
+    description: 'The Oath and the Office by Corey Brettschneider, 2018',
+    link: 'https://wwnorton.com/books/The-Oath-and-the-Office/',
     video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
+      'https://www.coreybrettschneider.com/assets/book-images/the-oath-and-the-office-no-shad.png',
     id: 'project1',
   },
   {
-    name: 'Motion Primitives',
-    description: 'UI kit to make beautiful, animated interfaces.',
-    link: 'https://motion-primitives.com/',
+    name: 'admiring...',
+    description: 'Quintus Jan Telting, c. 1988',
+    link: 'https://teltingcollection.com/wp-content/uploads/2020/01/1797__anno-1988_110-x-140_.jpg',
     video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
+      'https://teltingcollection.com/wp-content/uploads/2020/01/1797__anno-1988_110-x-140_.jpg',
+    id: 'project2',
+  },
+]
+
+export const PROJECTS: Project[] = [
+  {
+    name: 'SentimentVroom',
+    description:
+      "Analyzing your favorite driver's interaction with their race engineer throughout a race with sentiment analysis of broadcasted audio clips.",
+    link: 'https://github.com/AlexyCz/F1RadioSentiment',
+    video: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGk1dWt6ZDdhNjk2MGt3aXUyeWdwajRkcXk2M3B1cmhwZzM2b29icCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0IybCqTvCr3bDoIw/giphy.gif',
+    id: 'project1',
+  },
+  {
+    name: 'Exploratory Data Engineering',
+    description:
+      'Exploring a variety of data engineering self-directed practicums forked from @danielbeach on Github.',
+    link: 'https://github.com/AlexyCz/data-engineering-practice',
+    // video: 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmh2bDM2ZHJvYmhrYnh4Ymd5cnE4eXF4NTMxODdndWVscXJuMjNjNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qzE4X805YG1APcYuhT/giphy.gifhttps://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmh2bDM2ZHJvYmhrYnh4Ymd5cnE4eXF4NTMxODdndWVscXJuMjNjNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qzE4X805YG1APcYuhT/giphy.gif',
+    video: 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjhzN3p1YTZlMGt3bGg1d29idnB2NmtnNTBrdTlsb2drNjl6dmo3aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OkHnEyxwMOk1O1jXWL/giphy.gif',
     id: 'project2',
   },
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
-    start: '2024',
+    company: 'Braid - University of Michigan PIT-KN',
+    title: 'Open Source Developer',
+    industry: 'Public Interest Technology',
+    start: '2025',
     end: 'Present',
-    link: 'https://ibelick.com',
+    link: 'https://braider.io',
+    id: 'work0',
+  },
+  {
+    company: 'Built Technologies',
+    title: 'Data Engineer',
+    industry: 'Construction Real Estate - Finance',
+    start: '2021',
+    end: '2023',
+    link: 'https://getbuilt.com/about-us/',
     id: 'work1',
   },
   {
-    company: 'Freelance',
-    title: 'Design Engineer',
-    start: '2022',
-    end: '2024',
-    link: 'https://ibelick.com',
+    company: 'Brigade Media',
+    title: 'Data Engineer, Intern',
+    industry: 'Civic',
+    start: 'Fall',
+    end: '2018',
+    link: 'https://www.linkedin.com/company/brigade-/about/',
     id: 'work2',
   },
   {
-    company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
-    end: 'Present',
-    link: 'https://ibelick.com',
+    company: 'Clover Health',
+    title: 'Data Engineer, Intern',
+    industry: 'Healthcare',
+    start: 'Summer',
+    end: '2018',
+    link: 'https://www.cloverhealth.com/about-us/about-clover',
     id: 'work3',
+  },
+  {
+    company: 'Foursquare',
+    title: 'Software Engineer, Android, Intern',
+    industry: 'Social Network',
+    start: 'Summer',
+    end: '2017',
+    link: 'https://foursquare.com/about-us/',
+    id: 'work4',
   },
 ]
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    title: 'Exploring the Intersection of Design, AI, and Design Engineering',
-    description: 'How AI is changing the way we design',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+    title: 'How to write a leet code editorial.',
+    description: 'No one has written about solving the problem this way.',
+    link: '/blog/english-major-mode',
     uid: 'blog-1',
-  },
-  {
-    title: 'Why I left my job to start my own company',
-    description:
-      'A deep dive into my decision to leave my job and start my own company',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-2',
-  },
-  {
-    title: 'What I learned from my first year of freelancing',
-    description:
-      'A look back at my first year of freelancing and what I learned',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-3',
   },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    label: 'Github',
-    link: 'https://github.com/ibelick',
-  },
-  {
-    label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
-  },
-  {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
+    link: 'https://www.linkedin.com/in/alexycrz',
   },
   {
-    label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
+    label: 'Github',
+    link: 'https://github.com/AlexyCz',
   },
 ]
 
