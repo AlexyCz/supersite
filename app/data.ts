@@ -9,6 +9,7 @@ type Project = {
 type WorkExperience = {
   company: string
   title: string
+  industry: string
   start: string
   end: string
   link: string
