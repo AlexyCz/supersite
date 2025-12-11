@@ -182,10 +182,9 @@ export default function Personal() {
             Started very breadboards and wires in college, but followed the path of code.
           </p>
           <p className="mb-4 text-zinc-600 dark:text-zinc-400">
-            I am fond of code that can be elegant but most importantly readable and effective in its function. 
-            Luckily I have had opportunities across different industries, e.g. real estate fintech, health tech, and civic tech, to practice.
-            Although most of my current expertise is in data engineering with varied applications, my curiosity inevitably leads me to confront ambiguity.
-            That is when one learns best.
+            I am fond of code that can be elegant, readable, but most importantly, effective in its function.
+            Fortunately, I have had opportunities across different industries to practice.
+            My curiosity inevitably leads me to confront ambiguity, and I do my utmost to solve the problem ahead.
           </p>
           <p className="mb-4 text-zinc-600 dark:text-zinc-400">
             Living by RTDC: Reading The Documentation Carefully.

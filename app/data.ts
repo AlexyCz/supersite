@@ -125,30 +125,10 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 export const BLOG_POSTS: BlogPost[] = [
   {
     title: 'How to write a leet code editorial.',
-    description: 'How can I write about code.',
+    description: 'No one has written about solving the problem this way.',
     link: '/blog/english-major-mode',
     uid: 'blog-1',
   },
-  // {
-  //   title: 'Exploring the Intersection of Design, AI, and Design Engineering',
-  //   description: 'How AI is changing the way we design',
-  //   link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-  //   uid: 'blog-1',
-  // },
-  // {
-  //   title: 'Why I left my job to start my own company',
-  //   description:
-  //     'A deep dive into my decision to leave my job and start my own company',
-  //   link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-  //   uid: 'blog-2',
-  // },
-  // {
-  //   title: 'What I learned from my first year of freelancing',
-  //   description:
-  //     'A look back at my first year of freelancing and what I learned',
-  //   link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-  //   uid: 'blog-3',
-  // },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
@@ -159,10 +139,6 @@ export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
     link: 'https://github.com/AlexyCz',
-  },
-  {
-    label: 'Substack',
-    link: 'https://substack.com/@cruzcntrl',
   },
 ]
 
